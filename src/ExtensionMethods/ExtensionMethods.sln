@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods.csproj", "{B46F6188-8E27-425C-BCAC-D24EBA9D0B9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethodsClassLibrary", "..\ExtensionMethodsClassLibrary\ExtensionMethodsClassLibrary.csproj", "{EFADD737-B7CB-4234-A3F1-777E37F9177D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B46F6188-8E27-425C-BCAC-D24EBA9D0B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46F6188-8E27-425C-BCAC-D24EBA9D0B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46F6188-8E27-425C-BCAC-D24EBA9D0B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46F6188-8E27-425C-BCAC-D24EBA9D0B9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFADD737-B7CB-4234-A3F1-777E37F9177D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFADD737-B7CB-4234-A3F1-777E37F9177D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFADD737-B7CB-4234-A3F1-777E37F9177D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFADD737-B7CB-4234-A3F1-777E37F9177D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29DE86AC-9E4F-4B96-AD1F-2B22572F4AE3}
+	EndGlobalSection
+EndGlobal

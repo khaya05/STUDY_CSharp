@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumsExample", "EnumsExample.csproj", "{331E44C4-EAEA-487E-8F44-25F00D4F326A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumsClassLibrary", "..\EnumsClassLibrary\EnumsClassLibrary.csproj", "{BCE5D029-F5F5-4946-8C8B-0E9BB71CC51E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{331E44C4-EAEA-487E-8F44-25F00D4F326A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331E44C4-EAEA-487E-8F44-25F00D4F326A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331E44C4-EAEA-487E-8F44-25F00D4F326A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331E44C4-EAEA-487E-8F44-25F00D4F326A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE5D029-F5F5-4946-8C8B-0E9BB71CC51E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE5D029-F5F5-4946-8C8B-0E9BB71CC51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE5D029-F5F5-4946-8C8B-0E9BB71CC51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE5D029-F5F5-4946-8C8B-0E9BB71CC51E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9689EA0C-A302-4C1F-94A6-62B4639E4689}
+	EndGlobalSection
+EndGlobal

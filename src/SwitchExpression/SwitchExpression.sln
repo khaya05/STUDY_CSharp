@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchExpression", "SwitchExpression.csproj", "{3287A316-ED43-4859-B90B-E0281F2CD8FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchExpressionClassLibrary", "..\SwitchExpressionClassLibrary\SwitchExpressionClassLibrary.csproj", "{82635758-A95B-4792-BBF2-629BDF058353}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3287A316-ED43-4859-B90B-E0281F2CD8FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3287A316-ED43-4859-B90B-E0281F2CD8FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3287A316-ED43-4859-B90B-E0281F2CD8FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3287A316-ED43-4859-B90B-E0281F2CD8FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82635758-A95B-4792-BBF2-629BDF058353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82635758-A95B-4792-BBF2-629BDF058353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82635758-A95B-4792-BBF2-629BDF058353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82635758-A95B-4792-BBF2-629BDF058353}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8DAAD2F-FC09-4179-85DE-3E0A6B50BA6E}
+	EndGlobalSection
+EndGlobal
