@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTableExample", "HashTab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashSetExample", "HashSetExample\HashSetExample.csproj", "{48F2CD1F-F6B2-49CB-97EB-F3705470785C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashSetExample2", "HashSetExample2\HashSetExample2.csproj", "{A5146548-0449-4FF2-88AB-22B0ED1AE0D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashSetExample3", "HashSetExample3\HashSetExample3.csproj", "{76D18795-9A89-4FD8-B9AC-E9EDCD2FE49F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{48F2CD1F-F6B2-49CB-97EB-F3705470785C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48F2CD1F-F6B2-49CB-97EB-F3705470785C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48F2CD1F-F6B2-49CB-97EB-F3705470785C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5146548-0449-4FF2-88AB-22B0ED1AE0D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5146548-0449-4FF2-88AB-22B0ED1AE0D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5146548-0449-4FF2-88AB-22B0ED1AE0D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5146548-0449-4FF2-88AB-22B0ED1AE0D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D18795-9A89-4FD8-B9AC-E9EDCD2FE49F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D18795-9A89-4FD8-B9AC-E9EDCD2FE49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D18795-9A89-4FD8-B9AC-E9EDCD2FE49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D18795-9A89-4FD8-B9AC-E9EDCD2FE49F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
