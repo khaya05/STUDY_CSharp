@@ -28,7 +28,7 @@ namespace ArrayListExample
 
   class Employee
   {
-    public string EmployeeName{ get; set; }
+    public string EmployeeName { get; set; } = string.Empty;
   }
 
   class Program
