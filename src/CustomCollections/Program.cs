@@ -11,15 +11,66 @@ namespace CustomCollections
 
   public class Customer
   {
-    public string CustomerID{ get; set; }
-    public string CustomerName{ get; set; }
-    public string Email{ get; set; }
+    public string CustomerID { get; set; } = string.Empty;
+    public string CustomerName{ get; set; } = string.Empty;
+    public string Email{ get; set; } = string.Empty;
     public TypeOfCustomer CustomerType{ get; set; }
   }
 
   // custom collection class
-  public class CustomerList
+  public class CustomersList:IEnumerable
   {
-    
+    private List<Customer> customers = new List<Customer>();
+
+    public IEnumerator GetEnumerator()
+    {
+      for (var i = 0; i < customers.Count; i++)
+      {
+        yield return customers[i];
+      }
+    }
+
+    public void Add(Customer customer)
+    {
+      if(customer.CustomerID.StartsWith('A') || customer.CustomerID.StartsWith("a"))
+      {
+        customers.Add(customer);
+      }
+      else
+      {
+        Console.WriteLine("Invalid customer ID");
+      }
+    }
+  }
+
+  class Program 
+  {
+    static void Main()
+    {
+      CustomersList customersList = new CustomersList()
+      {
+        new Customer(){CustomerID="101", CustomerName="James", Email="James@email.com", CustomerType= TypeOfCustomer.RegularCustomer},
+        new Customer(){CustomerID="102", CustomerName="Zack", Email="Zack@email.com", CustomerType= TypeOfCustomer.VIPCustomer},
+        new Customer(){CustomerID="103", CustomerName="Lissa", Email="Lissa@email.com", CustomerType= TypeOfCustomer.VIPCustomer},
+      };
+      IEnumerator enumerator = customersList.GetEnumerator();
+
+      //add
+      Customer newCustomer = new Customer() 
+      {
+        CustomerID="A456", 
+        CustomerName = "Jake", 
+        Email = "Jake@email.com", 
+        CustomerType = TypeOfCustomer.RegularCustomer 
+      };
+
+      customersList.Add(newCustomer);
+
+      foreach(Customer customer in customersList)
+      {
+        Console.WriteLine("{0}, {1}, {2}", customer.CustomerID, customer.CustomerName, customer.CustomerType);
+      }
+    }
   }
 }
+
