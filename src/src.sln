@@ -33,6 +33,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICollectionExample", "IColl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IList", "IList\IList.csproj", "{2CFAC1C0-1BA0-477F-B57D-D53CDD7A7603}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEQuatable", "IEQuatable\IEQuatable.csproj", "{38C24C4E-4120-4735-BB4A-A4C16B2E1072}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousTypes", "AnonymousTypes\AnonymousTypes.csproj", "{B3A5E9B0-0C09-481D-BAF8-E475DBAB8271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousObjectsClassLib", "AnonymousObjectsClassLib\AnonymousObjectsClassLib.csproj", "{70BA4C96-89CC-4837-8283-4E1D61CBFDBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -102,5 +108,17 @@ Global
 		{2CFAC1C0-1BA0-477F-B57D-D53CDD7A7603}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CFAC1C0-1BA0-477F-B57D-D53CDD7A7603}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CFAC1C0-1BA0-477F-B57D-D53CDD7A7603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C24C4E-4120-4735-BB4A-A4C16B2E1072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C24C4E-4120-4735-BB4A-A4C16B2E1072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C24C4E-4120-4735-BB4A-A4C16B2E1072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C24C4E-4120-4735-BB4A-A4C16B2E1072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3A5E9B0-0C09-481D-BAF8-E475DBAB8271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A5E9B0-0C09-481D-BAF8-E475DBAB8271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A5E9B0-0C09-481D-BAF8-E475DBAB8271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A5E9B0-0C09-481D-BAF8-E475DBAB8271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70BA4C96-89CC-4837-8283-4E1D61CBFDBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70BA4C96-89CC-4837-8283-4E1D61CBFDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70BA4C96-89CC-4837-8283-4E1D61CBFDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70BA4C96-89CC-4837-8283-4E1D61CBFDBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
