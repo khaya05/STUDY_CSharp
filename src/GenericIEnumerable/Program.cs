@@ -23,7 +23,7 @@ namespace GenericCollections
     private List<Customer> customers = new List<Customer>();
 
     // NON_GENERIC
-    public IEnumerator IEnumerable.GetEnumerator()
+    IEnumerator IEnumerable.GetEnumerator()
     {
       return this.GetEnumerator();
     }
