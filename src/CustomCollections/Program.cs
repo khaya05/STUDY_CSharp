@@ -49,9 +49,9 @@ namespace CustomCollections
     {
       CustomersList customersList = new CustomersList()
       {
-        new Customer(){CustomerID="101", CustomerName="James", Email="James@email.com", CustomerType= TypeOfCustomer.RegularCustomer},
-        new Customer(){CustomerID="102", CustomerName="Zack", Email="Zack@email.com", CustomerType= TypeOfCustomer.VIPCustomer},
-        new Customer(){CustomerID="103", CustomerName="Lissa", Email="Lissa@email.com", CustomerType= TypeOfCustomer.VIPCustomer},
+        new Customer(){CustomerID="A101", CustomerName="James", Email="James@email.com", CustomerType= TypeOfCustomer.RegularCustomer},
+        new Customer(){CustomerID="A102", CustomerName="Zack", Email="Zack@email.com", CustomerType= TypeOfCustomer.VIPCustomer},
+        new Customer(){CustomerID="A103", CustomerName="Lissa", Email="Lissa@email.com", CustomerType= TypeOfCustomer.VIPCustomer},
       };
       IEnumerator enumerator = customersList.GetEnumerator();
 
