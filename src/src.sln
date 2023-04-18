@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionOfObjectsClassLib
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorExample", "IteratorExample\IteratorExample.csproj", "{FA6F189E-1185-4F2F-97C6-4E4C87CBF7DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCollections", "CustomCollections\CustomCollections.csproj", "{63FD8B0F-8D99-4BEC-894F-6BE851726A2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +80,9 @@ Global
 		{FA6F189E-1185-4F2F-97C6-4E4C87CBF7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA6F189E-1185-4F2F-97C6-4E4C87CBF7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA6F189E-1185-4F2F-97C6-4E4C87CBF7DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63FD8B0F-8D99-4BEC-894F-6BE851726A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63FD8B0F-8D99-4BEC-894F-6BE851726A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63FD8B0F-8D99-4BEC-894F-6BE851726A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63FD8B0F-8D99-4BEC-894F-6BE851726A2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
