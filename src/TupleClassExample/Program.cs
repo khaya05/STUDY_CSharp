@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Tuple<string, int> person = new Tuple<string, int>("scott", 30);
+
+// access values from tuple
+Console.WriteLine(person.Item1);
+Console.WriteLine(person.Item2);

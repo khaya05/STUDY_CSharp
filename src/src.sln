@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousObjectsClassLib", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TupleClassExample", "TupleClassExample\TupleClassExample.csproj", "{EC14E6B3-0B60-4FAF-AD9F-3D9DBD29F91A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueTuple", "ValueTuple\ValueTuple.csproj", "{A9309488-E789-443D-B864-99B8351A7BD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -126,5 +128,9 @@ Global
 		{EC14E6B3-0B60-4FAF-AD9F-3D9DBD29F91A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC14E6B3-0B60-4FAF-AD9F-3D9DBD29F91A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC14E6B3-0B60-4FAF-AD9F-3D9DBD29F91A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9309488-E789-443D-B864-99B8351A7BD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9309488-E789-443D-B864-99B8351A7BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9309488-E789-443D-B864-99B8351A7BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9309488-E789-443D-B864-99B8351A7BD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
