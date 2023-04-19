@@ -1,2 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+using ValueTupleClassLib;
+
+namespace ValueTupleExample
+{
+  class Program
+  {
+    static void Main()
+    {
+      Customer c = new Customer();
+
+      // getDetails
+      (int Id, string Name, string Email) = c.GetCustomerDetails();
+
+      Console.WriteLine(Email);
+    }
+  }
+}
