@@ -1,5 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\HarshaBank.BusinessLogic\HarshaBank.BusinessLogic.csproj" />
+    <ProjectReference Include="..\HarshaBank.Configuration\HarshaBank.Configuration.csproj" />
+    <ProjectReference Include="..\HarshaBank.Entities\HarshaBank.Entities.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
