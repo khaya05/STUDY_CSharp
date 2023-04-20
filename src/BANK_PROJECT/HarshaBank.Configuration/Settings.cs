@@ -1,11 +1,13 @@
-﻿namespace HarshaBank.Configuration;
-/// <summary>
-/// Project level configuration settings
-/// </summary>
-public static class Settings
+﻿namespace HarshaBank.Configuration
 {
   /// <summary>
-  /// Customer number starts from 1001
+  /// Project level configuration settings
   /// </summary>
-  public static long BaseCustomerNo { get; set; } = 1000;
-}
+  public static class Settings
+  {
+    /// <summary>
+    /// Customer number starts from 1001
+    /// </summary>
+    public static long BaseCustomerNo { get; set; } = 1000;
+  }
+};
