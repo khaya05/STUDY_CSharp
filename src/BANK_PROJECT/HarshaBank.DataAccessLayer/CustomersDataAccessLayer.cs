@@ -40,13 +40,24 @@ namespace HarshaBank.DataAccessLayer
     /// <returns>Customers Lis</returns>
     public List<Customer> GetCustomers()
     {
-      // create new customers list
-      List<Customer> customersList = new List<Customer>();
+      try
+      {
+        // create new customers list
+        List<Customer> customersList = new List<Customer>();
 
-      // copy all customers from the source collection into newCustomers list
-      Customers.ForEach(item => customersList.Add(item.Clone() as Customer));
+        // copy all customers from the source collection into newCustomers list
+        Customers.ForEach(item => customersList.Add(item.Clone() as Customer));
 
-      return customersList;
+        return customersList;
+      }
+      catch(CustomerException)
+      {
+        throw;
+      }
+      catch (Exception)
+      {
+        throw;
+      }
     }
 
     /// <summary>
@@ -56,10 +67,21 @@ namespace HarshaBank.DataAccessLayer
     /// <returns>List of matching customers</returns>
     public List<Customer> GetCustomersByCondition(Predicate<Customer> predicate)
     {
-      List<Customer> customerList = new List<Customer>();
-      List<Customer> filteredCustomer = customerList.FindAll(predicate);
-      Customers.ForEach(item => filteredCustomer.Add(item.Clone() as Customer));
-      return customerList;
+      try
+      {
+        List<Customer> customerList = new List<Customer>();
+        List<Customer> filteredCustomer = customerList.FindAll(predicate);
+        Customers.ForEach(item => filteredCustomer.Add(item.Clone() as Customer));
+        return customerList;
+      }
+      catch(CustomerException)
+      {
+        throw;
+      }
+      catch (Exception)
+      {
+        throw;
+      }
     }
 
     /// <summary>
@@ -69,13 +91,24 @@ namespace HarshaBank.DataAccessLayer
     /// <returns>Guid of newly created customer</returns>
     public Guid AddCustomer(Customer customer)
     {
-      // generate new guid
-      customer.CustomerId = Guid.NewGuid();
+      try
+      {
+        // generate new guid
+        customer.CustomerId = Guid.NewGuid();
 
-      //add customer
-      Customers.Add(customer);
+        //add customer
+        Customers.Add(customer);
 
-      return customer.CustomerId;
+        return customer.CustomerId;
+      }
+      catch(CustomerException)
+      {
+        throw;
+      }
+      catch (Exception)
+      {
+        throw;
+      }
     }
 
     /// <summary>
@@ -85,21 +118,32 @@ namespace HarshaBank.DataAccessLayer
     /// <returns>Determines whether the customer is updated or not</returns>
     public bool UpdateCustomer(Customer customer)
     {
-      Customer existingCustomer = Customers.Find(item => item.CustomerId == customer.CustomerId);
-
-      if(existingCustomer != null)
+      try
       {
-        existingCustomer.CustomerCode = customer.CustomerCode;
-        existingCustomer.CustomerName = customer.CustomerName;
-        existingCustomer.Address = customer.Address;
-        existingCustomer.Landmark = customer.Landmark;
-        existingCustomer.City = customer.City;
-        existingCustomer.Country = customer.Country;
-        existingCustomer.Mobile = customer.Mobile;
+        Customer existingCustomer = Customers.Find(item => item.CustomerId == customer.CustomerId);
 
-        return true;
+        if(existingCustomer != null)
+        {
+          existingCustomer.CustomerCode = customer.CustomerCode;
+          existingCustomer.CustomerName = customer.CustomerName;
+          existingCustomer.Address = customer.Address;
+          existingCustomer.Landmark = customer.Landmark;
+          existingCustomer.City = customer.City;
+          existingCustomer.Country = customer.Country;
+          existingCustomer.Mobile = customer.Mobile;
+
+          return true;
+        }
+        return false;
       }
-      return false;
+      catch(CustomerException)
+      {
+        throw;
+      }
+      catch (Exception)
+      {
+        throw;
+      }
     }
 
     /// <summary>
@@ -109,11 +153,22 @@ namespace HarshaBank.DataAccessLayer
     /// <returns></returns>
     bool DeleteCustomer(Guid customerId)
     {
-      if(Customers.RemoveAll(item => item.CustomerId == customerId) > 0)
+      try
       {
-        return true;
+        if(Customers.RemoveAll(item => item.CustomerId == customerId) > 0)
+        {
+          return true;
+        }
+        return false;
       }
-      return false;
+      catch(CustomerException)
+      {
+        throw;
+      }
+      catch (Exception)
+      {
+        throw;
+      }
     }
     #endregion
   }
