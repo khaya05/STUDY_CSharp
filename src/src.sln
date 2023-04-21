@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueTupleClassLib", "Value
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQExample", "LINQExample\LINQExample.csproj", "{FD4A1E98-E764-426E-9841-C0EEE3E90AB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQOrderBy", "LINQOrderBy\LINQOrderBy.csproj", "{50BD2153-BD27-4657-AB2E-79068863FAF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -144,5 +146,9 @@ Global
 		{FD4A1E98-E764-426E-9841-C0EEE3E90AB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD4A1E98-E764-426E-9841-C0EEE3E90AB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD4A1E98-E764-426E-9841-C0EEE3E90AB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50BD2153-BD27-4657-AB2E-79068863FAF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50BD2153-BD27-4657-AB2E-79068863FAF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50BD2153-BD27-4657-AB2E-79068863FAF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50BD2153-BD27-4657-AB2E-79068863FAF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
