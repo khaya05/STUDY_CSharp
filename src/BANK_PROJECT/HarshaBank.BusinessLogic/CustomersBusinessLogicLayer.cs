@@ -10,7 +10,7 @@ namespace HarshaBank.BusinessLogic;
 /// <summary>
 /// Represents customer business logic
 /// </summary>
-public class CustomerBusinessLogicLayer:ICustomerBusinessLogicLayer
+public class CustomersBusinessLogicLayer:ICustomerBusinessLogicLayer
 {
   #region Private Fields
   private ICustomerBusinessLogicLayer _customerDataAccessLayer;
@@ -20,7 +20,7 @@ public class CustomerBusinessLogicLayer:ICustomerBusinessLogicLayer
   /// <summary>
   /// Constructor that initializes CustomerDataAccessLayer
   /// </summary>
-  public CustomerBusinessLogicLayer()
+  public CustomersBusinessLogicLayer()
   {
     _customerDataAccessLayer = new CustomersDataAccessLayer();
   }
@@ -47,7 +47,7 @@ public class CustomerBusinessLogicLayer:ICustomerBusinessLogicLayer
     try
     {
       // invoke DAL
-      return CustomerBusinessLayer.GetCustomers();
+      return CustomersDataAccessLayer.GetCustomers();
     }
     catch (CustomerException)
     {
@@ -69,7 +69,7 @@ public class CustomerBusinessLogicLayer:ICustomerBusinessLogicLayer
     try
     {
       // invoke DAL
-      return CustomerBusinessLayer.GetCustomersByCondition(predicate);
+      return CustomersDataAccessLayer.GetCustomersByCondition(predicate);
     }
     catch (CustomerException)
     {
@@ -110,7 +110,7 @@ public class CustomerBusinessLogicLayer:ICustomerBusinessLogicLayer
         customer.CustomerCode = HarshaBank.Configuration.Settings.BaseCustomerNo + 1;
       }
 
-      return CustomerBusinessLayer.AddCustomer(customer);
+      return CustomersDataAccessLayer.AddCustomer(customer);
     }
     catch (CustomerException)
     {
@@ -132,7 +132,7 @@ public class CustomerBusinessLogicLayer:ICustomerBusinessLogicLayer
     try
     {
       // invoke DAL
-      return CustomerBusinessLayer.UpdateCustomer(customer);
+      return CustomersDataAccessLayer.UpdateCustomer(customer);
     }
     catch (CustomerException)
     {
@@ -154,7 +154,7 @@ public class CustomerBusinessLogicLayer:ICustomerBusinessLogicLayer
     try
     {
       // invoke DAL
-      return CustomerBusinessLayer.DeleteCustomer(customerID);
+      return CustomersDataAccessLayer.DeleteCustomer(customerID);
     }
     catch (CustomerException)
     {
