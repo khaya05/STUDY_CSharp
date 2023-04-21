@@ -12,11 +12,11 @@ namespace HarshaBank.DataAccessLayer
   public class CustomersDataAccessLayer:ICustomersDataAccessLayer
   {
     #region Fields
-    private List<Customer> _customers;
+    private static List<Customer> _customers;
     #endregion
 
     #region Constructors
-    public CustomersDataAccessLayer()
+    static CustomersDataAccessLayer()
     {
       _customers = new List<Customer>();
     }
@@ -26,7 +26,7 @@ namespace HarshaBank.DataAccessLayer
     /// <summary>
     /// Represents source customers collection
     /// </summary>
-    private List<Customer> Customers
+    private static List<Customer> Customers
     {
       set => _customers = value;
       get => _customers;
@@ -70,8 +70,8 @@ namespace HarshaBank.DataAccessLayer
       try
       {
         List<Customer> customerList = new List<Customer>();
-        List<Customer> filteredCustomer = customerList.FindAll(predicate);
-        Customers.ForEach(item => filteredCustomer.Add(item.Clone() as Customer));
+        List<Customer> filteredCustomer = Customers.FindAll(predicate);
+        filteredCustomer.ForEach(item => customerList.Add(item.Clone() as Customer));
         return customerList;
       }
       catch(CustomerException)
