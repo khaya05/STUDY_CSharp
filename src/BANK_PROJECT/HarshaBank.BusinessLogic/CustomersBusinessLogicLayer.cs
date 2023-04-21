@@ -3,12 +3,14 @@ using HarshaBank.Entities;
 using HarshaBank.Exceptions;
 using System.Collections.Generic;
 using HarshaBank.BusinessLogicLayer.Contracts;
+using HarshaBank.DataAccessLayer;
+using HarshaBank.DataAccessLayer.DALContracts;
 
 namespace HarshaBank.BusinessLogic;
 /// <summary>
 /// Represents customer business logic
 /// </summary>
-public class CustomerBusinessLayer:ICustomerBusinessLogicLayer
+public class CustomerBusinessLogicLayer:ICustomerBusinessLogicLayer
 {
   #region Private Fields
   private ICustomerBusinessLogicLayer _customerDataAccessLayer;
@@ -18,9 +20,9 @@ public class CustomerBusinessLayer:ICustomerBusinessLogicLayer
   /// <summary>
   /// Constructor that initializes CustomerDataAccessLayer
   /// </summary>
-  public CustomerBusinessLayer()
+  public CustomerBusinessLogicLayer()
   {
-    _customerDataAccessLayer = new CustomerDataAccessLayer();
+    _customerDataAccessLayer = new CustomersDataAccessLayer();
   }
   #endregion
 
@@ -28,7 +30,7 @@ public class CustomerBusinessLayer:ICustomerBusinessLogicLayer
   /// <summary>
   /// Private property that represents reference of CustomerDataAccessLayer
   /// </summary>
-  public ICustomerDataAccessLayer CustomersDataAccessLayer
+  private ICustomersDataAccessLayer CustomersDataAccessLayer
   {
     set => _customerDataAccessLayer = value;
     get => _customerDataAccessLayer;
@@ -40,7 +42,7 @@ public class CustomerBusinessLayer:ICustomerBusinessLogicLayer
   /// Returns all existing customers
   /// </summary>
   /// <returns>all customers</returns>
-  public List<Customers> GetCustomers()
+  public List<Customer> GetCustomers()
   {
     try
     {
@@ -62,7 +64,7 @@ public class CustomerBusinessLayer:ICustomerBusinessLogicLayer
   /// </summary>
   /// <param name="predicate">Lambda expression that contains condition to check</param>
   /// <returns>The list of matching customers</returns>
-  public List<Customers> GetCustomersByCondition(Predicate<Customer> predicate)
+  public List<Customer> GetCustomersByCondition(Predicate<Customer> predicate)
   {
     try
     {

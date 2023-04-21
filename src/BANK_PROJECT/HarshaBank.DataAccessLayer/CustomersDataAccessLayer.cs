@@ -151,7 +151,7 @@ namespace HarshaBank.DataAccessLayer
     /// </summary>
     /// <param name="customerId">CustomerId to delete</param>
     /// <returns></returns>
-    bool DeleteCustomer(Guid customerId)
+    public bool DeleteCustomer(Guid customerId)
     {
       try
       {

@@ -12,14 +12,14 @@ public interface ICustomerBusinessLogicLayer
     /// Returns all existing customers
     /// </summary>
     /// <returns>all customers</returns>
-    List<Customers> GetCustomers();
+    List<Customer> GetCustomers();
 
     /// <summary>
     /// Returns a customer that matches the specified criteria
     /// </summary>
     /// <param name="predicate">Lambda expression that contains condition to check</param>
     /// <returns>The list of matching customers</returns>
-    List<Customers> GetCustomersByCondition(Predicate<Customer> predicate);
+    List<Customer> GetCustomersByCondition(Predicate<Customer> predicate);
 
     /// <summary>
     /// Adds new customer to the existing customer List
