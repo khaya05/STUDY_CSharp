@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeExample", "DateTime
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateAdditionAndSubtraction", "DateAdditionAndSubtraction\DateAdditionAndSubtraction.csproj", "{C6BA1858-905F-4E45-A40E-0981B6C8D384}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegexExample", "RegexExample\RegexExample.csproj", "{2EEB806A-DDDD-46B5-9BDF-76DBD8E97427}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -174,5 +176,9 @@ Global
 		{C6BA1858-905F-4E45-A40E-0981B6C8D384}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6BA1858-905F-4E45-A40E-0981B6C8D384}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6BA1858-905F-4E45-A40E-0981B6C8D384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EEB806A-DDDD-46B5-9BDF-76DBD8E97427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EEB806A-DDDD-46B5-9BDF-76DBD8E97427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EEB806A-DDDD-46B5-9BDF-76DBD8E97427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EEB806A-DDDD-46B5-9BDF-76DBD8E97427}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
