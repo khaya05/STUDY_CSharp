@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQExample", "LINQExample\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQOrderBy", "LINQOrderBy\LINQOrderBy.csproj", "{50BD2153-BD27-4657-AB2E-79068863FAF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringsExample", "StringsExample\StringsExample.csproj", "{B12DE720-BCDE-4D5C-8FF6-833D85CE39EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -150,5 +152,9 @@ Global
 		{50BD2153-BD27-4657-AB2E-79068863FAF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50BD2153-BD27-4657-AB2E-79068863FAF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50BD2153-BD27-4657-AB2E-79068863FAF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B12DE720-BCDE-4D5C-8FF6-833D85CE39EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B12DE720-BCDE-4D5C-8FF6-833D85CE39EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B12DE720-BCDE-4D5C-8FF6-833D85CE39EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B12DE720-BCDE-4D5C-8FF6-833D85CE39EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
