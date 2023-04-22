@@ -203,6 +203,7 @@ project.lock.json
 *.vc.vc.opendb
 *.vc.db
 
+cs.cs
 # Rider
 .idea/
 
