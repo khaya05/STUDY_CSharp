@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringsExample", "StringsEx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilderExample", "StringBuilderExample\StringBuilderExample.csproj", "{8CF687EC-34BE-47EF-8EA5-10257ED8FC20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeExample", "DateTimeExample\DateTimeExample.csproj", "{59741108-6389-4ED4-B453-4A82714D45DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -162,5 +164,9 @@ Global
 		{8CF687EC-34BE-47EF-8EA5-10257ED8FC20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CF687EC-34BE-47EF-8EA5-10257ED8FC20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CF687EC-34BE-47EF-8EA5-10257ED8FC20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59741108-6389-4ED4-B453-4A82714D45DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59741108-6389-4ED4-B453-4A82714D45DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59741108-6389-4ED4-B453-4A82714D45DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59741108-6389-4ED4-B453-4A82714D45DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
