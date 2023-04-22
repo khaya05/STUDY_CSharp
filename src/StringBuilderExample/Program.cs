@@ -16,5 +16,7 @@ class Program
     }
 
     Console.WriteLine(builder.ToString());
+    Console.WriteLine(builder.Insert(5, " updated "));
+    Console.WriteLine(builder.MaxCapacity);
   }
 }
